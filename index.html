@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Ôn Tập 20 Câu Hỏi Kinh Tế</title>
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --primary-hover: #4338ca;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-color: #1f2937;
+            --correct-color: #10b981;
+            --incorrect-color: #ef4444;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+        .question-card {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+        .question-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+        }
+        .options label {
+            display: block;
+            padding: 8px 12px;
+            margin: 6px 0;
+            background: #ffffff;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .options label:hover {
+            background: #e0e7ff;
+            border-color: var(--primary-color);
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background: #eff6ff;
+            border-left: 4px solid var(--primary-color);
+            font-size: 0.9rem;
+            display: none;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background: var(--primary-hover);
+        }
+        #result-box {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+        .correct-ans {
+            background-color: #d1fae5 !important;
+            border-color: var(--correct-color) !important;
+            color: #065f46;
+        }
+        .incorrect-ans {
+            background-color: #fee2e2 !important;
+            border-color: var(--incorrect-color) !important;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Trắc Nghiệm Ôn Tập Kinh Tế (20 Câu)</h1>
+    <form id="quizForm">
+        <!-- Câu 1 -->
+        <div class="question-card" data-answer="C">
+            <div class="question-title">Câu 1: Phát biểu nào dưới đây là sai về phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> A. Phát triển kinh tế là kết hợp hài hòa giữa tăng trưởng kinh tế và tăng trưởng về xã hội.</label>
+                <label><input type="radio" name="q1" value="B"> B. Phát triển kinh tế là sự tăng tiến mọi mặt về kinh tế - xã hội của một quốc gia.</label>
+                <label><input type="radio" name="q1" value="C"> C. Phát triển kinh tế là quá trình biến đổi về lượng của một quốc gia trong thời gian nhất định.</label>
+                <label><input type="radio" name="q1" value="D"> D. Phát triển kinh tế là quá trình tăng trưởng kinh tế gắn liền với tiến bộ xã hội.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Phát triển kinh tế là quá trình biến đổi cả về lượng và chất, chứ không chỉ riêng biến đổi về lượng.</div>
+        </div>
+
+        <!-- Câu 2 -->
+        <div class="question-card" data-answer="B">
+            <div class="question-title">Câu 2: Khi đánh giá sự phát triển kinh tế của một quốc gia, người ta không căn cứ vào tiêu chí nào dưới đây?</div>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> A. Cơ cấu vùng kinh tế.</label>
+                <label><input type="radio" name="q2" value="B"> B. Tiềm lực quốc phòng.</label>
+                <label><input type="radio" name="q2" value="C"> C. Cơ cấu ngành kinh tế.</label>
+                <label><input type="radio" name="q2" value="D"> D. Cơ cấu thành phần kinh tế.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tiềm lực quốc phòng thuộc lĩnh vực quân sự, không phải là tiêu chí đánh giá trực tiếp phát triển kinh tế.</div>
+        </div>
+
+        <!-- Câu 3 -->
+        <div class="question-card" data-answer="D">
+            <div class="question-title">Câu 3: Mối quan hệ giữa tăng trưởng kinh tế và phát triển bền vững được thể hiện ở nội dung nào dưới đây?</div>
+            <div class="options">
+                <label><input type="radio" name="q3" value="A"> A. Tăng trưởng kinh tế và phát triển bền vững không liên quan đến nhau.</label>
+                <label><input type="radio" name="q3" value="B"> B. Tăng trưởng kinh tế không gây ảnh hưởng đến phát triển bền vững.</label>
+                <label><input type="radio" name="q3" value="C"> C. Tăng trưởng kinh tế quan trọng nhưng không đảm bảo phát triển bền vững.</label>
+                <label><input type="radio" name="q3" value="D"> D. Tăng trưởng kinh tế là điều kiện tiên quyết để đạt được phát triển bền vững.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tăng trưởng kinh tế tạo ra nguồn lực vật chất, là điều kiện tiên quyết cho phát triển bền vững.</div>
+        </div>
+
+        <!-- Câu 4 -->
+        <div class="question-card" data-answer="C">
+            <div class="question-title">Câu 4: Đối với mỗi quốc gia, phát triển kinh tế thể hiện ở nội dung nào dưới đây?</div>
+            <div class="options">
+                <label><input type="radio" name="q4" value="A"> A. Chuyển dịch vùng sản xuất.</label>
+                <label><input type="radio" name="q4" value="B"> B. Chuyển dịch việc phân phối.</label>
+                <label><input type="radio" name="q4" value="C"> C. Chuyển dịch cơ cấu ngành.</label>
+                <label><input type="radio" name="q4" value="D"> D. Chuyển đổi mô hình tiền tệ.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Phát triển kinh tế thể hiện rõ qua sự chuyển dịch cơ cấu ngành kinh tế.</div>
+        </div>
+
+        <!-- Câu 5 -->
+        <div class="question-card" data-answer="D">
+            <div class="question-title">Câu 5: Trong mối quan hệ giữa tăng trưởng kinh tế với phát triển kinh tế thì tăng trưởng kinh tế không đóng vai trò nào dưới đây đối với phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q5" value="A"> A. Là nội dung của phát triển bền vững.</label>
+                <label><input type="radio" name="q5" value="B"> B. Là động lực của phát triển xã hội.</label>
+                <label><input type="radio" name="q5" value="C"> C. Là điều kiện cần thiết để phát triển bền vững.</label>
+                <label><input type="radio" name="q5" value="D"> D. Là nhân tố bên ngoài của phát triển bền vững.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tăng trưởng kinh tế là nhân tố cốt lõi bên trong, không phải nhân tố bên ngoài.</div>
+        </div>
+
+        <!-- Câu 6 -->
+        <div class="question-card" data-answer="D">
+            <div class="question-title">Câu 6: Dùng để biểu thị thu nhập của nền kinh tế trong một thời kỳ nhất định được tính bằng tổng thu nhập từ hàng hóa, dịch vụ cuối cùng do công dân của quốc gia đó tạo ra trong một năm là</div>
+            <div class="options">
+                <label><input type="radio" name="q6" value="A"> A. tổng thu nhập quốc nội ( GDP).</label>
+                <label><input type="radio" name="q6" value="B"> B. tổng thu nhập quốc dân trên đầu người.</label>
+                <label><input type="radio" name="q6" value="C"> C. tổng thu nhập quốc nội trên đầu người.</label>
+                <label><input type="radio" name="q6" value="D"> D. tổng thu nhập quốc dân ( GNI).</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> GNI tính theo tổng thu nhập do công dân quốc gia đó tạo ra.</div>
+        </div>
+
+        <!-- Câu 7 -->
+        <div class="question-card" data-answer="B">
+            <div class="question-title">Câu 7: Yếu tố nào dưới đây là chỉ tiêu của phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q7" value="A"> A. Mức sống bình dân.</label>
+                <label><input type="radio" name="q7" value="B"> B. Tiến bộ xã hội.</label>
+                <label><input type="radio" name="q7" value="C"> C. Cơ cấu dòng tiền.</label>
+                <label><input type="radio" name="q7" value="D"> D. Tăng trưởng dân số.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tiến bộ xã hội là một trong các chỉ tiêu phản ánh sự phát triển kinh tế.</div>
+        </div>
+
+        <!-- Câu 8 -->
+        <div class="question-card" data-answer="D">
+            <div class="question-title">Câu 8: Cụm từ GDP/người là một trong những chỉ tiêu thể hiện tốc độ tăng trưởng kinh tế nó thể hiện nội dung nào dưới đây?</div>
+            <div class="options">
+                <label><input type="radio" name="q8" value="A"> A. Tổng sản phẩm quốc nội.</label>
+                <label><input type="radio" name="q8" value="B"> B. Tổng sản phẩm quốc dân theo đầu người.</label>
+                <label><input type="radio" name="q8" value="C"> C. Tổng sản phẩm quốc dân.</label>
+                <label><input type="radio" name="q8" value="D"> D. Tổng sản phẩm quốc nội theo đầu người.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> GDP/người là tổng sản phẩm quốc nội chia cho tổng số dân (theo đầu người).</div>
+        </div>
+
+        <!-- Câu 9 -->
+        <div class="question-card" data-answer="C">
+            <div class="question-title">Câu 9: Đối với mỗi quốc gia, vai trò của tăng trưởng và phát triển kinh tế thể hiện ở việc, thông qua tăng trưởng và phát triển kinh tế sẽ góp phần</div>
+            <div class="options">
+                <label><input type="radio" name="q9" value="A"> A. tăng tỷ lệ đói nghèo đa chiều.</label>
+                <label><input type="radio" name="q9" value="B"> B. gia tăng phân hóa giàu nghèo.</label>
+                <label><input type="radio" name="q9" value="C"> C. giải quyết tốt vấn đề việc làm.</label>
+                <label><input type="radio" name="q9" value="D"> D. gia tăng lệ thuộc vào thế giới.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tăng trưởng giúp mở rộng sản xuất và giải quyết tốt việc làm cho người lao động.</div>
+        </div>
+
+        <!-- Câu 10 -->
+        <div class="question-card" data-answer="B">
+            <div class="question-title">Câu 10: Phát biểu nào dưới đây là đúng về phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q10" value="A"> A. Mục tiêu cuối cùng của phát triển kinh tế là xây dựng được cơ cấu kinh tế hiện đại.</label>
+                <label><input type="radio" name="q10" value="B"> B. Phát triển kinh tế là quá trình tăng trưởng kinh tế gắn liền với tiến bộ xã hội.</label>
+                <label><input type="radio" name="q10" value="C"> C. Phát triển kinh tế là quá trình biến đổi về lượng của nền kinh tế.</label>
+                <label><input type="radio" name="q10" value="D"> D. Muốn phát triển kinh tế cần thúc đẩy tăng trưởng kinh tế với tốc độ cao.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Phát triển kinh tế là quá trình tăng trưởng kinh tế gắn liền với cơ cấu kinh tế hợp lý và tiến bộ xã hội.</div>
+        </div>
+
+        <!-- Câu 11 -->
+        <div class="question-card" data-answer="C">
+            <div class="question-title">Câu 11: Tăng trưởng kinh tế được biểu hiện ở nội dung nào dưới đây?</div>
+            <div class="options">
+                <label><input type="radio" name="q11" value="A"> A. Tập trung đến sự tiến bộ về phân phối thu nhập.</label>
+                <label><input type="radio" name="q11" value="B"> B. Đảm bảo phát triển bền vững về môi trường.</label>
+                <label><input type="radio" name="q11" value="C"> C. Sự gia tăng quy mô sản lượng của nền kinh tế.</label>
+                <label><input type="radio" name="q11" value="D"> D. Chú trọng vào cải thiện chất lượng cuộc sống.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tăng trưởng biểu hiện ở sự gia tăng quy mô sản lượng (GDP, GNI) của nền kinh tế.</div>
+        </div>
+
+        <!-- Câu 12 -->
+        <div class="question-card" data-answer="B">
+            <div class="question-title">Câu 12: Phát biểu nào dưới đây là sai về mối quan hệ giữa tăng trưởng kinh tế với phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q12" value="A"> A. Tăng trưởng, phát triển kinh tế tạo điều kiện để phát triển văn hoá, giáo dục.</label>
+                <label><input type="radio" name="q12" value="B"> B. Một quốc gia muốn phát triển bền vững, chỉ cần đẩy mạnh tăng trưởng kinh tế.</label>
+                <label><input type="radio" name="q12" value="C"> C. Phát triển kinh tế góp phần giảm bớt chênh lệch trình độ phát triển giữa các vùng.</label>
+                <label><input type="radio" name="q12" value="D"> D. Phát triển kinh tế góp phần thúc đẩy công nghiệp hoá, hiện đại hoá nền kinh tế.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Phát triển bền vững đòi hỏi phải đồng bộ cả kinh tế, xã hội và môi trường, không thể chỉ dựa vào mỗi tăng trưởng kinh tế.</div>
+        </div>
+
+        <!-- Câu 13 -->
+        <div class="question-card" data-answer="C">
+            <div class="question-title">Câu 13: Tăng trưởng và phát triển kinh tế không có vai trò nào dưới đây?</div>
+            <div class="options">
+                <label><input type="radio" name="q13" value="A"> A. Thực hiện phân phối công bằng.</label>
+                <label><input type="radio" name="q13" value="B"> B. Nâng cao mức sống người dân.</label>
+                <label><input type="radio" name="q13" value="C"> C. Gia tăng khoảng cách giàu nghèo.</label>
+                <label><input type="radio" name="q13" value="D"> D. Thu hẹp khoảng cách các vùng.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tăng trưởng và phát triển kinh tế hướng đến thu hẹp khoảng cách giàu nghèo, gia tăng khoảng cách giàu nghèo là hậu quả tiêu cực.</div>
+        </div>
+
+        <!-- Câu 14 -->
+        <div class="question-card" data-answer="D">
+            <div class="question-title">Câu 14: Phát biểu nào sau đây là sai về các chỉ tiêu tăng trưởng và phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q14" value="A"> A. Phát triển kinh tế góp phần thúc đẩy công nghiệp hoá, hiện đại hoá nền kinh tế.</label>
+                <label><input type="radio" name="q14" value="B"> B. Tăng trưởng, phát triển kinh tế tạo điều kiện để phát triển văn hoá, giáo dục.</label>
+                <label><input type="radio" name="q14" value="C"> C. Tăng trưởng kinh tế là thước đo năng lực của một quốc gia biểu hiện qua quy mô tăng trưởng và tốc độ tăng trưởng.</label>
+                <label><input type="radio" name="q14" value="D"> D. Phát triển kinh tế là quá trình biến đổi về lượng của nền kinh tế ở một quốc gia trong khoảng thời gian nhất định.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Phát triển kinh tế là biến đổi cả về lượng và chất, chứ không chỉ riêng biến đổi về lượng.</div>
+        </div>
+
+        <!-- Câu 15 -->
+        <div class="question-card" data-answer="B">
+            <div class="question-title">Câu 15: Nội dung nào dưới đây không phải là tiêu chí thể hiện sự tăng trưởng kinh tế của một quốc gia?</div>
+            <div class="options">
+                <label><input type="radio" name="q15" value="A"> A. Sự gia tăng thu nhập của người dân.</label>
+                <label><input type="radio" name="q15" value="B"> B. Sự gia tăng của dân số.</label>
+                <label><input type="radio" name="q15" value="C"> C. Sự gia tăng của hàng hóa.</label>
+                <label><input type="radio" name="q15" value="D"> D. Sự gia tăng mức sống của người dân.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Dân số gia tăng không phải là tiêu chí của tăng trưởng kinh tế.</div>
+        </div>
+
+        <!-- Câu 16 -->
+        <div class="question-card" data-answer="A">
+            <div class="question-title">Câu 16: Quá trình tăng trưởng kinh tế gắn liền với sự chuyển dịch cơ cấu kinh tế và đảm bảo tiến bộ xã hội là nội dung của khái niệm nào dưới đây?</div>
+            <div class="options">
+                <label><input type="radio" name="q16" value="A"> A. Phát triển kinh tế.</label>
+                <label><input type="radio" name="q16" value="B"> B. Tăng trưởng kinh tế.</label>
+                <label><input type="radio" name="q16" value="C"> C. Hội nhập kinh tế.</label>
+                <label><input type="radio" name="q16" value="D"> D. Kinh tế đối ngoại.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Đây là định nghĩa chuẩn của khái niệm phát triển kinh tế.</div>
+        </div>
+
+        <!-- Câu 17 -->
+        <div class="question-card" data-answer="C">
+            <div class="question-title">Câu 17: Đối với mỗi quốc gia, chuyển dịch cơ cấu kinh tế nào dưới đây là tiêu chí đánh giá sự phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q17" value="A"> A. Cơ cấu vùng kinh tế.</label>
+                <label><input type="radio" name="q17" value="B"> B. Cơ cấu lãnh thổ.</label>
+                <label><input type="radio" name="q17" value="C"> C. Cơ cấu ngành kinh tế.</label>
+                <label><input type="radio" name="q17" value="D"> D. Cơ cấu thu nhập.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Chuyển dịch cơ cấu ngành kinh tế là tiêu chí quan trọng đánh giá phát triển kinh tế.</div>
+        </div>
+
+        <!-- Câu 18 -->
+        <div class="question-card" data-answer="C">
+            <div class="question-title">Câu 18: Đối với mỗi quốc gia, tăng trưởng kinh tế có vai trò nào dưới đây đối với sự phát triển bền vững?</div>
+            <div class="options">
+                <label><input type="radio" name="q18" value="A"> A. Độc lập.</label>
+                <label><input type="radio" name="q18" value="B"> B. Mục đích.</label>
+                <label><input type="radio" name="q18" value="C"> C. Nội dung.</label>
+                <label><input type="radio" name="q18" value="D"> D. Hậu quả.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Tăng trưởng kinh tế là nội dung kinh tế cốt lõi bên trong của phát triển bền vững.</div>
+        </div>
+
+        <!-- Câu 19 -->
+        <div class="question-card" data-answer="B">
+            <div class="question-title">Câu 19: Giá trị bằng tiền của tất cả các hàng hóa và dịch vụ cuối cùng được sản xuất ra trên lãnh thổ một nước trong thời gian nhất định được gọi là</div>
+            <div class="options">
+                <label><input type="radio" name="q19" value="A"> A. tổng thu nhập quốc dân ( GNI).</label>
+                <label><input type="radio" name="q19" value="B"> B. tổng thu nhập quốc nội ( GDP).</label>
+                <label><input type="radio" name="q19" value="C"> C. tổng thu nhập quốc nội trên đầu người.</label>
+                <label><input type="radio" name="q19" value="D"> D. tổng thu nhập quốc dân trên đầu người.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> GDP (Gross Domestic Product) tính trên phạm vi lãnh thổ quốc gia.</div>
+        </div>
+
+        <!-- Câu 20 -->
+        <div class="question-card" data-answer="D">
+            <div class="question-title">Câu 20: Phát biểu nào sau đây là sai về các chỉ tiêu tăng trưởng và phát triển kinh tế?</div>
+            <div class="options">
+                <label><input type="radio" name="q20" value="A"> A. Có thể đánh giá mức sống, phân hoá giàu nghèo, tỉ lệ nghèo của một quốc gia bằng tổng thu nhập quốc dân bình quân đầu người.</label>
+                <label><input type="radio" name="q20" value="B"> B. Tăng trưởng kinh tế là sự gia tăng của tổng sản phẩm quốc nội (GDP) và tổng thu nhập quốc dân (GNI).</label>
+                <label><input type="radio" name="q20" value="C"> C. GDP là một trong những thước đo đánh giá tốc độ tăng trưởng kinh tế của quốc gia trong thời điểm nhất định.</label>
+                <label><input type="radio" name="q20" value="D"> D. Phát triển kinh tế là sự tăng tiến về mọi mặt kinh tế, chính trị, xã hội của một quốc gia.</label>
+            </div>
+            <div class="explanation"><b>Giải thích:</b> Khái niệm phát triển kinh tế bao gồm kinh tế, xã hội, môi trường và cơ cấu, không bao gồm yếu tố "chính trị" theo định chuẩn SGK phổ thông.</div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="checkAnswers()">Nộp Bài & Xem Kết Quả</button>
+        <div id="result-box"></div>
+    </form>
+</div>
+
+<script>
+    function checkAnswers() {
+        const cards = document.querySelectorAll('.question-card');
+        let score = 0;
+
+        cards.forEach((card, index) => {
+            const correctAnswer = card.getAttribute('data-answer');
+            const qName = `q${index + 1}`;
+            const selected = card.querySelector(`input[name="${qName}"]:checked`);
+            const options = card.querySelectorAll('.options label');
+            const explanation = card.querySelector('.explanation');
+
+            // Hiển thị phần giải thích
+            explanation.style.display = 'block';
+
+            // Reset style cũ
+            options.forEach(opt => {
+                opt.classList.remove('correct-ans', 'incorrect-ans');
+            });
+
+            if (selected) {
+                const userVal = selected.value;
+                const selectedLabel = selected.parentElement;
+                
+                if (userVal === correctAnswer) {
+                    score++;
+                    selectedLabel.classList.add('correct-ans');
+                } else {
+                    selectedLabel.classList.add('incorrect-ans');
+                    // Highlight đáp án đúng
+                    card.querySelectorAll('input').forEach(input => {
+                        if (input.value === correctAnswer) {
+                            input.parentElement.classList.add('correct-ans');
+                        }
+                    });
+                }
+            } else {
+                // Nếu chưa chọn, đánh dấu đáp án đúng màu xanh
+                card.querySelectorAll('input').forEach(input => {
+                    if (input.value === correctAnswer) {
+                        input.parentElement.classList.add('correct-ans');
+                    }
+                });
+            }
+        });
+
+        const resultBox = document.getElementById('result-box');
+        resultBox.style.display = 'block';
+        resultBox.style.backgroundColor = score >= 15 ? '#d1fae5' : '#fee2e2';
+        resultBox.style.color = score >= 15 ? '#065f46' : '#991b1b';
+        resultBox.innerHTML = `Bạn đạt được: ${score} / 20 câu đúng!`;
+        
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
